@@ -1,0 +1,8 @@
+/conf.log
+/(null).log
+/stratum.log
+/rejected.log
+/client.log
+/.vscode
+/stratum-proxy
+/*.o
