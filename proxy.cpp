@@ -322,6 +322,7 @@ void *proxy_thread(void *p)
 							accepted++;
 							debuglog("share ACCEPTED (%i/%i)\n",accepted,rejected);
 						}else{
+							rejected++;
 							debuglog("share REJECTED (%i/%i) reason %s\n",accepted,rejected,json_get_array(json, "error")->u.array.values[1]->u.string.ptr);
 						}
 					}else{
