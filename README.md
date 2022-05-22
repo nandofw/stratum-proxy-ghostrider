@@ -1,0 +1,1 @@
+# stratum-proxy-ghostrider
