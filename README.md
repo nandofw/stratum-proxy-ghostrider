@@ -7,3 +7,6 @@ open source stratum-proxy for Ghostrider based on yiimp stratum pool
 ## Donations
 * RTM: `RTGNz6JxcofKkdZ6UyezcaAJctuFTWM8PH`
 * BTC: `bc1qwlut2vdy4ak2wu7l4kagcf923merxvmwsjhd33`
+
+## Developers
+* **[nandofw](https://github.com/nandofw)**
