@@ -7,15 +7,11 @@ CFLAGS= -g -march=native
 # if you use the auto exchange feature...
 CFLAGS += -DNO_EXCHANGE
 
-LDLIBS=iniparser/libiniparser.a -lpthread -lgmp -lm -lstdc++ -lssl -lcrypto 
+LDLIBS=iniparser/libiniparser.a -lpthread -lgmp -lm -lstdc++
 
 
 SOURCES=proxy.cpp util.cpp list.cpp job.cpp share.cpp socket.cpp client.cpp client_core.cpp\
 	object.cpp json.cpp base58.cpp
-
-CFLAGS += -DHAVE_CURL
-LDCURL = $(shell /usr/bin/pkg-config --static --libs libcurl)
-LDFLAGS += $(LDCURL)
 
 OBJECTS=$(SOURCES:.cpp=.o)
 OUTPUT=stratum-proxy
